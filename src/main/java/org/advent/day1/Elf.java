@@ -21,4 +21,8 @@ public class Elf implements Comparable<Elf> {
         throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
     }
 
+    public void addCalories(int i) {
+        totalCalories += i;
+    }
+
 }
