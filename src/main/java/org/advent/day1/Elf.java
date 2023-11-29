@@ -5,7 +5,7 @@ package org.advent.day1;
  */
 public class Elf implements Comparable<Elf> {
 
-    private int totalCalories = 0;
+    private Integer totalCalories = 0;
 
     /**
      * Calories carried by the Elf
@@ -17,8 +17,7 @@ public class Elf implements Comparable<Elf> {
 
     @Override
     public int compareTo(Elf arg0) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+        return totalCalories.compareTo(arg0.totalCalories);
     }
 
     public void addCalories(int i) {
